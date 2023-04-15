@@ -7,6 +7,9 @@ module.exports = {
     './app/**/*.{vue,js,ts,jsx,tsx}',
   ],
   theme: {
+    fontFamily: {
+      sans: ['Open Sans']
+    },
     extend: {},
   },
   plugins: [require("daisyui")],

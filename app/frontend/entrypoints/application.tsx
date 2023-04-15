@@ -18,7 +18,7 @@ import ReactDOM from 'react-dom/client'
 import App from '../App'
 import './application.css'
 
-import.meta.globEager('../channels/**/*_channel*')
+import.meta.globEager('~/channels/*channel*')
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
