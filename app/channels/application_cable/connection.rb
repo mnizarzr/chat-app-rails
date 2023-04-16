@@ -1,4 +1,11 @@
+require 'nanoid'
+
 module ApplicationCable
   class Connection < ActionCable::Connection::Base
+    identified_by :current_user
+
+    def connect
+      self.current_user = Nanoid.generate(size: 10)
+    end
   end
 end
