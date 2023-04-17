@@ -1,0 +1,28 @@
+{
+  "entrypoints/application.css": {
+    "file": "assets/application-1bbff112.css",
+    "isEntry": true,
+    "src": "entrypoints/application.css",
+    "integrity": "sha384-reoVPOB48ss9PUbuzcr5cAkfMFBhAn+OitzOZvWUhZg48FnsRdJVQ0NDQFZCTm8R"
+  },
+  "entrypoints/application.tsx": {
+    "css": [
+      "assets/application-b5a71453.css",
+      "assets/application-1bbff112.css"
+    ],
+    "file": "assets/application-8b6b04aa.js",
+    "isEntry": true,
+    "src": "entrypoints/application.tsx",
+    "integrity": "sha384-obxPifNPWS1S/UN3ZNyi1nFChKIQD0wTwwhbgTyOoglInVweYO8mpaIIwYb1m28j"
+  },
+  "react.svg": {
+    "file": "assets/react-35ef61ed.svg",
+    "src": "react.svg",
+    "integrity": "sha384-cDbCOJV1zqkdm7RnBHSTwcIr/MwxN5kmAuNSQGCXatuOuld8u29fp6YuEhpNNm5Y"
+  },
+  "vite.svg": {
+    "file": "assets/vite-4a748afd.svg",
+    "src": "vite.svg",
+    "integrity": "sha384-SynTjsk1S4bc6BNt+jy5xrVnsR77cE6Ymf2js+HeYX1NyALJnxd6kWzmTkOrqOJy"
+  }
+}

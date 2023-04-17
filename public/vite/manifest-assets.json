@@ -1,0 +1,12 @@
+{
+  "images/react.svg": {
+    "file": "assets/react-35ef61ed.svg",
+    "src": "images/react.svg",
+    "integrity": "sha384-cDbCOJV1zqkdm7RnBHSTwcIr/MwxN5kmAuNSQGCXatuOuld8u29fp6YuEhpNNm5Y"
+  },
+  "images/vite.svg": {
+    "file": "assets/vite-4a748afd.svg",
+    "src": "images/vite.svg",
+    "integrity": "sha384-SynTjsk1S4bc6BNt+jy5xrVnsR77cE6Ymf2js+HeYX1NyALJnxd6kWzmTkOrqOJy"
+  }
+}

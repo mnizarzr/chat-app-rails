@@ -73,7 +73,8 @@ yarn-debug.log*
 /config/master.key
 
 # Vite Ruby
-/public/vite*
+/public/vite-test
+/public/vite-dev
 # Vite uses dotenv and suggests to ignore local-only env files. See
 # https://vitejs.dev/guide/env-and-mode.html#env-files
 *.local
