@@ -1,5 +1,8 @@
 # Simple chat app using Rails 7
 
+# Demo
+![Demo App](assets/demo.gif)
+
 Things I should cover:
 
 * Ruby version
