@@ -20,4 +20,4 @@ RUN gem install bundler:2.4.11 && \
 
 COPY . $APP_PATH
 
-ENTRYPOINT [ "./bin/serve" ]
+CMD [ "./bin/serve" ]
