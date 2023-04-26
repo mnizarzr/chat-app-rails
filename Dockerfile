@@ -1,6 +1,7 @@
 FROM ruby:3.0.5 AS builder
 
-RUN apt-get update && apt-get install -y nodejs postgresql-client --no-install-recommends
+RUN curl -sL https://deb.nodesource.com/setup_18.x | bash - && apt-get install -y nodejs
+RUN apt-get update && apt-get install -y postgresql-client --no-install-recommends
 
 ENV NODE_ENV production
 ENV RAILS_ENV production
@@ -12,9 +13,9 @@ WORKDIR $APP_PATH
 
 COPY Gemfile* $APP_PATH
 COPY package*.json $APP_PATH
-RUN npm install
-RUN bundle config --global frozen 1
-RUN bundle install --without development test
+RUN bundle config --global frozen 1 && \
+    bundle install --without development test && \
+    npm install
 
 COPY . $APP_PATH
 
