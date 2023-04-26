@@ -12,3 +12,9 @@ services:
   redis:
     hostname: redis
     image: "redis:7-alpine"
+
+
+networks:
+  default:
+    external: true
+    name: nginxmain
