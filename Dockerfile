@@ -19,4 +19,4 @@ RUN bundle config --global frozen 1 && \
 
 COPY . $APP_PATH
 
-ENTRYPOINT [ "./bin/serve.sh" ]
+ENTRYPOINT [ "./bin/serve" ]
