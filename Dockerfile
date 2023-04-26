@@ -13,7 +13,8 @@ WORKDIR $APP_PATH
 
 COPY Gemfile* $APP_PATH
 COPY package*.json $APP_PATH
-RUN bundle config --global frozen 1 && \
+RUN gem install bundler:2.4.11 && \
+    bundle config --global frozen 1 && \
     bundle install --without development test && \
     npm install
 
