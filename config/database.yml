@@ -80,7 +80,9 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  url: <%= ENV['DATABASE_URL'] %>
+  # database: db/production.sqlite3
   # username: chat_app_rails
   # password: <%= ENV["CHAT_APP_RAILS_DATABASE_PASSWORD"] %>

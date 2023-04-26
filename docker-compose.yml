@@ -1,0 +1,14 @@
+services:
+  app:
+    build:
+      context: .
+    restart: unless-stopped
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 80 -b '0.0.0.0'"
+    ports:
+      - 3000:80
+    depends_on:
+      - redis
+
+  redis:
+    hostname: redis
+    image: "redis:7-alpine"
